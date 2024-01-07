@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title> Piedra, papel o tijeras 🦄</title>
+        <script>
+            function aleatorio(min, max){ return Math.floor(Math.random()*(max - min + 1)+min)}
+            //1 es piedra, 2 es papel, 3 es tijeras
+            let jugador = 0
+            let pc = aleatorio(1,3)
+            jugador = prompt("🖖¡Holi bb! ingresa el número de tu elección:\n🪨 PIEDRA es 1, 📄 PAPEL es 2 y ✂️ TIJERAS es 3")
+            //alert("elegiste " + jugador)
+            if(jugador == 1) {alert("elegiste piedra 🪨")}
+            else if (jugador == 2 ){alert("elegiste papel📄")}
+            else if (jugador == 3 ){alert("elegiste tijeras ✂️ ")}
+            else {alert("elegiste YOU LOSE☠️")}
+            if(pc == 1) {alert("pc eligio piedra 🪨")}
+            else if (pc == 2 ){alert("pc eligió papel📄")}
+            else if (pc == 3 ){alert("pc eligió tijeras ✂️ ")}
+            if (jugador == pc) {
+            alert("Es un EMPATE")
+        } else if (jugador - pc == 1 || jugador - pc == -2) {
+            alert("Tu GANAS 🎉")
+        } else {
+            alert("Tu Pierdes 😢")
+        }
+        </script>
+    </head>
+    <body>
+        <h1>Piedra🪨, papel📑 o tijeras✂️ By:ZafiroRey🦄</h1>
+    </body>
+    </html>
